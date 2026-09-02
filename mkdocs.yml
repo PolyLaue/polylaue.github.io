@@ -10,5 +10,10 @@ markdown_extensions:
   - pymdownx.superfences
 nav:
   - index.md
+  - getting-started.md
+  - projects.md
+  - viewing.md
+  - point-picking.md
+  - mapping.md
   - algorithms.md
   - references.md
