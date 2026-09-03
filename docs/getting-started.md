@@ -25,7 +25,7 @@ start the application again.
 To update PolyLaue to the latest version, activate the environment and run:
 
 ```bash
-conda update -c conda-forge polylaue
+conda update -y -c conda-forge polylaue
 ```
 
 ## Installation (from source)
@@ -34,8 +34,8 @@ PolyLaue may also be installed from source with pip, using Python 3.11 or
 newer:
 
 ```bash
-git clone https://github.com/polylaue/polylaue
-pip install ./polylaue
+git clone https://github.com/PolyLaue/PolyLaue
+pip install ./PolyLaue
 ```
 
 ## First steps

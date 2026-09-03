@@ -6,9 +6,10 @@ region of interest) evolves across a scan.
 
 ## Region maps
 
-Open **Mapping → Regions** to manage plain rectangular regions. Add a
-region, position and resize it on the image, and click **Display Region**
-to open a map of that region across the scan.
+Open **Mapping → Regions** to manage plain rectangular regions. Click
+**Start Interactive Add** and draw regions directly on the image, then
+click **Stop Interactive Add** when finished. Select a region and click
+**Display Region** to open a map of that region across the scan.
 
 ## HKL region maps
 
@@ -33,7 +34,11 @@ regions to resolve their positions.
 ## Map windows
 
 Clicking **Display Region** opens a map window for the selected region.
-A map window can be **locked** to its current scan number, so that maps
-of the same region at different scan numbers can be compared side by
-side; displaying the region again then opens an additional, unlocked
-window.
+**Show Map Shape** displays the mapped area on the image so it can be
+adjusted, and **Save Map Data** saves the current map as a NumPy array
+(`map_data.npy` in the project directory).
+
+A map window can be locked to its current scan number with the **Lock
+Scan Number** checkbox, so that maps of the same region at different
+scan numbers can be compared side by side; displaying the region again
+then opens an additional, unlocked window.

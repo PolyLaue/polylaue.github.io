@@ -32,8 +32,8 @@ diamond anvil cells (DAC). Possible results include:
 
 PolyLaue was developed to replace software that was used previously [1-9].
 
-Results obtained with PolyLaue are saved in HDF format and as NumPy arrays,
-and, therefore, they can be used by other programs [10].
+Results obtained with PolyLaue are saved in HDF format, as ASCII files, and
+as NumPy arrays, and, therefore, they can be used by other programs [10].
 
 !!! note
 

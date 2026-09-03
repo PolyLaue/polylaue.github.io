@@ -33,8 +33,10 @@ comes from one of two sources:
   break between scans. By default it is relative to the first frame of
   the current series.
 - **File modification times.** Otherwise, the displayed time is the
-  creation/modification time of the currently viewed file, relative to
-  the first file of the section.
+  modification time (mtime) of the currently viewed file, relative to
+  the first file of the section. A file's mtime records when its
+  contents were written, and survives copying the file, so it usually
+  reflects the original acquisition time.
 
 ### Acquisition times
 
