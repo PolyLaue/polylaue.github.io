@@ -52,7 +52,7 @@ fields:
 ## Importing a PONI file as the geometry
 
 Instead of an NPZ geometry file, the **Geometry** field also accepts a
-`*.poni` file (as produced by pyFAI/Dioptas calibration). When a PONI
+`*.poni` file (as produced by Dioptas/pyFAI calibration). When a PONI
 file is selected and the project editor is accepted with **OK**:
 
 1. The PONI file is parsed and converted, using the project's frame
@@ -64,8 +64,25 @@ file is selected and the project editor is accepted with **OK**:
    edited) parameters; canceling it keeps the parameters exactly as
    parsed from the PONI file.
 
+The dialog also has a **Detector Setup** selector. Three setups have
+been used at HPCAT to collect Laue data, and they differ in how the
+white beam shift is applied to the point of normal incidence:
+
+- **16BMD** — the current setup (the default),
+- **16BMB (2016-2023)** — the setup available at 16BMB from 2016-3
+  until 2023-1,
+- **16BMB (before 2016)** — the setup available at 16BMB until 2016-2.
+
+The conversion is only valid for these setups. For data collected at
+other beamlines, prepare the geometry NPZ file externally and select it
+in the **Geometry** field instead.
+
 If the PONI file cannot be parsed, a validation error is shown and
 nothing is written.
+
+FIXME: add screenshot — the "Imported PONI Geometry" dialog after
+selecting a `.poni` file, showing the Detector Setup dropdown and the
+six parsed values (the Sep 3 email screenshot predates the dropdown).
 
 ## Creating a section
 
