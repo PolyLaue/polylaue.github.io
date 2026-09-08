@@ -29,7 +29,7 @@ the PolyLaue coordinate system at 16BMD.
 </figure>
 
 **Fig. 5.** Transferring of detector geometry from PolyLaue to LaueGo at
-16BMD.
+16BMD [11,12].
 
 ## Importing the geometry into PolyLaue
 
