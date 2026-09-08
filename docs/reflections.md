@@ -5,18 +5,18 @@
 Each section's results are stored in an HDF5 file located at
 `<project directory>/Sections/<section name>/reflections.h5`. It holds:
 
-- `/crystals` — the ABC matrix of each crystal (the components of the
+- `/crystals`: the ABC matrix of each crystal (the components of the
   basis vectors a, b, c with respect to the reference coordinate frame,
   see [Calibrating Detector Geometry](calibration.md)), indexed by
   crystal ID (0-based);
-- `/crystal_names` — the crystal names;
-- `/crystal_scan_numbers` — the scan number that was used to generate
+- `/crystal_names`: the crystal names;
+- `/crystal_scan_numbers`: the scan number that was used to generate
   each crystal's ABC matrix;
-- `/angular_shifts` — for each crystal ID, one row per scan number
+- `/angular_shifts`: for each crystal ID, one row per scan number
   (scan number − 1), holding the angular shift matrix and the angular
   shift in degrees; rows of NaN mean the crystal was not tracked on that
   scan;
-- `/predictions` — the predicted reflections for each scan number and
+- `/predictions`: the predicted reflections for each scan number and
   scan position: x, y, h, k, l, energy (keV), first and last order,
   d-spacing, and crystal ID.
 

@@ -43,15 +43,15 @@ pip install ./PolyLaue
 After starting PolyLaue, the typical workflow is:
 
 1. Create a project, a section, and one or more series pointing to your
-   scan data — see
+   scan data: see
    [Projects, Sections, and Series](projects.md).
 2. Double-click a series in the navigator to open it, and navigate
-   between scans, scan positions, and frames — see
+   between scans, scan positions, and frames: see
    [Viewing Data](viewing.md).
 3. Overlay predicted reflections, pick points, and run the indexing and
-   tracking routines — see [Picking Points](point-picking.md) and
+   tracking routines: see [Picking Points](point-picking.md) and
    [Algorithms](algorithms.md).
-4. Create region maps and HKL region maps — see [Mapping](mapping.md).
+4. Create region maps and HKL region maps: see [Mapping](mapping.md).
 
 !!! note
 

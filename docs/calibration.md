@@ -35,10 +35,10 @@ directly: select the `.poni` file in the **Geometry** field of the
 project editor and choose the setup in the dialog that follows, as
 described in [Projects, Sections, and Series](projects.md#importing-a-poni-file-as-the-geometry):
 
-- **16BMD** — the setup currently available at 16BMD (the default);
-- **16BMB (2016-2023)** — the setup which was available at 16BMB from
+- **16BMD**: the setup currently available at 16BMD (the default);
+- **16BMB (2016-2023)**: the setup which was available at 16BMB from
   2016-3 until 2023-1 [6];
-- **16BMB (before 2016)** — the setup which was available at 16BMB
+- **16BMB (before 2016)**: the setup which was available at 16BMB
   until 2016-2 [8].
 
 The same conversions are also available as standalone Python scripts

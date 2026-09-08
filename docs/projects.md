@@ -13,7 +13,7 @@ PolyLaue organizes data in a three-level hierarchy:
   describes their layout (scan shape, scan number range, and frames to
   skip).
 
-The raw scan images always stay in their own directories — PolyLaue
+The raw scan images always stay in their own directories. PolyLaue
 never writes into them.
 
 ## The navigator
@@ -47,7 +47,7 @@ fields:
 - **Description** (optional): free text for personal records.
 - **Directory**: the project directory. PolyLaue automatically creates
   and stores files here (predicted reflections, coordinate selections,
-  geometry, maps). Choose an empty directory — PolyLaue warns if the
+  geometry, maps). Choose an empty directory. PolyLaue warns if the
   chosen directory is not empty.
 - **Frame Shape**: the shape of the data frames, in pixels.
 - **Energy Range**: the energy range of the x-ray beam, in keV.
@@ -78,10 +78,10 @@ The dialog also has a **Detector Setup** selector. Three setups have
 been used at HPCAT to collect Laue data, and they differ in how the
 white beam shift is applied to the point of normal incidence:
 
-- **16BMD** — the current setup (the default),
-- **16BMB (2016-2023)** — the setup available at 16BMB from 2016-3
+- **16BMD**: the current setup (the default),
+- **16BMB (2016-2023)**: the setup available at 16BMB from 2016-3
   until 2023-1,
-- **16BMB (before 2016)** — the setup available at 16BMB until 2016-2.
+- **16BMB (before 2016)**: the setup available at 16BMB until 2016-2.
 
 The conversion is only valid for these setups. For data collected at
 other beamlines, prepare the geometry NPZ file externally and select it
@@ -90,7 +90,7 @@ in the **Geometry** field instead.
 If the PONI file cannot be parsed, a validation error is shown and
 nothing is written.
 
-FIXME: add screenshot — the "Imported PONI Geometry" dialog after
+FIXME: add screenshot of the "Imported PONI Geometry" dialog after
 selecting a `.poni` file, showing the Detector Setup dropdown and the
 six parsed values (the Sep 3 email screenshot predates the dropdown).
 
@@ -142,8 +142,8 @@ Double-click a series in the navigator to open it in the main window:
 
 ## Deleting entries
 
-Deleting an entry in the navigator asks for confirmation first — the
-deletion cannot be undone.
+Deleting an entry in the navigator asks for confirmation first, since
+the deletion cannot be undone.
 
 When deleting a **project**, the confirmation dialog additionally offers
 a checkbox to also delete the auto-generated files in the project

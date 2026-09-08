@@ -16,14 +16,14 @@ hovered).
 Right-clicking the image opens a context menu that, in addition to the
 usual view options, provides:
 
-- **set as background** — use the current image as the background image
+- **set as background**: use the current image as the background image
   for the current series, or for every series in the current section.
-- **perform saturation check** — mark saturated pixels.
-- **set scan position coordinates** — configure the physical coordinates
+- **perform saturation check**: mark saturated pixels.
+- **set scan position coordinates**: configure the physical coordinates
   displayed for the scan positions.
-- **set acquisition times** — configure computed frame times for the
+- **set acquisition times**: configure computed frame times for the
   current section (see below).
-- **set frame as time zero** — display frame times relative to the
+- **set frame as time zero**: display frame times relative to the
   current frame (see below).
 
 ![The image context menu](img/context-menu.png)
@@ -86,7 +86,7 @@ interval values from the last section you configured are pre-filled.
 
 Right-click any frame and choose **set frame as time zero** to display
 all frame times relative to that frame. This works with both time
-sources — computed acquisition times and file modification times — and
+sources (computed acquisition times and file modification times), and
 each source keeps its own time zero, so toggling **Apply acquisition
 times** does not mix them.
 
