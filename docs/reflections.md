@@ -23,30 +23,57 @@ Each section's results are stored in an HDF5 file located at
 HDF5 file must be closed during operations which update the file contents
 (Find, Track/Refine…).
 
-![The reflections file in HDFView](img/hdf5-tree.png)
+<figure markdown="span">
+  ![The reflections file in HDFView](img/hdf5-tree.png){ width="353" }
+  <figcaption>The reflections file in HDFView</figcaption>
+</figure>
 
-![The predictions table](img/hdf5-predictions.png)
+<figure markdown="span">
+  ![The predictions table](img/hdf5-predictions.png){ width="820" }
+  <figcaption>The predictions table</figcaption>
+</figure>
 
-![The crystals table](img/hdf5-crystals.png)
+<figure markdown="span">
+  ![The crystals table](img/hdf5-crystals.png){ width="820" }
+  <figcaption>The crystals table</figcaption>
+</figure>
 
-![The angular shifts table](img/hdf5-angular-shifts.png)
+<figure markdown="span">
+  ![The angular shifts table](img/hdf5-angular-shifts.png){ width="820" }
+  <figcaption>The angular shifts table</figcaption>
+</figure>
 
-![The crystal scan numbers](img/hdf5-crystal-scan-numbers.png)
+<figure markdown="span">
+  ![The crystal scan numbers](img/hdf5-crystal-scan-numbers.png){ width="820" }
+  <figcaption>The crystal scan numbers</figcaption>
+</figure>
 
-![The crystal names](img/hdf5-crystal-names.png)
+<figure markdown="span">
+  ![The crystal names](img/hdf5-crystal-names.png){ width="820" }
+  <figcaption>The crystal names</figcaption>
+</figure>
 
 ## Visualization of predicted reflections
 
 Open **Overlays → Reflections**:
 
-![The Overlays menu](img/overlays-menu.png)
+<figure markdown="span">
+  ![The Overlays menu](img/overlays-menu.png){ width="508" }
+  <figcaption>The Overlays menu</figcaption>
+</figure>
 
-![The Reflections Editor](img/reflections-editor.png)
+<figure markdown="span">
+  ![The Reflections Editor](img/reflections-editor.png){ width="532" }
+  <figcaption>The Reflections Editor</figcaption>
+</figure>
 
 Click Burn. Set Structure Type, d-limit, check Apply Angular Shift if
 needed, check Activate Burn.
 
-![Burned reflections on the image](img/burn.png)
+<figure markdown="span">
+  ![Burned reflections on the image](img/burn.png){ width="820" }
+  <figcaption>Burned reflections on the image</figcaption>
+</figure>
 
 ## Setting structure types
 
@@ -54,7 +81,10 @@ If you click "Settings" at the top, there's a checkbox for "Include Advanced
 Structure Types". If you check this, then the structure types in the burn
 dialog will include all structure types, instead of just the basic ones.
 
-![Include Advanced Structure Types in the Settings menu](img/advanced-structure-types.png)
+<figure markdown="span">
+  ![Include Advanced Structure Types in the Settings menu](img/advanced-structure-types.png){ width="716" }
+  <figcaption>Include Advanced Structure Types in the Settings menu</figcaption>
+</figure>
 
 To add new structure types, see [Adding New Structure Types](structure-types.md) or ask a beamline scientist.
 

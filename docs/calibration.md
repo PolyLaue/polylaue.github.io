@@ -11,16 +11,22 @@ project geometry file (`geometry.npz`), are presented in Fig. 4. Further
 transferring of detector geometry to the format of LaueGo is presented in
 Fig. 5.
 
-![Figure 3](img/figure_3.png)
+<figure markdown="span" class=diagram>
+  ![Figure 3](img/figure_3.png){ width="820" }
+</figure>
 
 **Fig. 3.** The PolyLaue coordinate system at 16BMD.
 
-![Figure 4](img/figure_4.png)
+<figure markdown="span" class=diagram>
+  ![Figure 4](img/figure_4.png){ width="820" }
+</figure>
 
 **Fig. 4.** Detector geometry in Dioptas/pyFAI notation with respect to
 the PolyLaue coordinate system at 16BMD.
 
-![Figure 5](img/figure_5.png)
+<figure markdown="span" class=diagram>
+  ![Figure 5](img/figure_5.png){ width="300" }
+</figure>
 
 **Fig. 5.** Transferring of detector geometry from PolyLaue to LaueGo at
 16BMD.

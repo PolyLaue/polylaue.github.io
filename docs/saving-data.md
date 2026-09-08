@@ -24,7 +24,10 @@ The Burn Reflections dialog (**Overlays → Reflections → Burn**) can move
 a crystal's ABC matrix between the reflections file and the project
 directory:
 
-![The Orientation dropdown of the Burn Reflections dialog](img/burn-orientation.png)
+<figure markdown="span">
+  ![The Orientation dropdown of the Burn Reflections dialog](img/burn-orientation.png){ width="676" }
+  <figcaption>The Orientation dropdown of the Burn Reflections dialog</figcaption>
+</figure>
 
 
 - **Write Orientation to Project Directory** saves the ABC matrix that
@@ -62,7 +65,10 @@ orientation determined with Indexing/Find in terms of further use of this
 orientation for refinement and tracking. This capability can be beneficial
 to move the same ABC matrix between different sections.
 
-![Burning from the project directory](img/burn-from-project-directory.png)
+<figure markdown="span">
+  ![Burning from the project directory](img/burn-from-project-directory.png){ width="820" }
+  <figcaption>Burning from the project directory</figcaption>
+</figure>
 
 ## Maps
 

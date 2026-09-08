@@ -22,7 +22,10 @@ position whenever the scan number changes. Predicted reflections must be
 loaded (see [Predicted Reflections](reflections.md)) for HKL regions to
 resolve their positions.
 
-![HKL Regions in the Mapping menu](img/hkl-regions-menu.png)
+<figure markdown="span">
+  ![HKL Regions in the Mapping menu](img/hkl-regions-menu.png){ width="499" }
+  <figcaption>HKL Regions in the Mapping menu</figcaption>
+</figure>
 
 There are two ways to add an entry:
 
@@ -34,29 +37,50 @@ There are two ways to add an entry:
   adds an entry for that reflection's crystal ID and HKL, centered on
   the reflection.
 
-![An HKL region in the table](img/hkl-regions-table.png)
+<figure markdown="span">
+  ![An HKL region in the table](img/hkl-regions-table.png){ width="820" }
+  <figcaption>An HKL region in the table</figcaption>
+</figure>
 
-![Right-clicking a predicted reflection](img/hkl-map-right-click.png)
+<figure markdown="span">
+  ![Right-clicking a predicted reflection](img/hkl-map-right-click.png){ width="570" }
+  <figcaption>Right-clicking a predicted reflection</figcaption>
+</figure>
 
-![The entry added by the right-click menu](img/hkl-regions-auto-added.png)
+<figure markdown="span">
+  ![The entry added by the right-click menu](img/hkl-regions-auto-added.png){ width="820" }
+  <figcaption>The entry added by the right-click menu</figcaption>
+</figure>
 
 Click Display Region.
 
-![The map of an HKL region](img/hkl-map.png)
+<figure markdown="span">
+  ![The map of an HKL region](img/hkl-map.png){ width="560" }
+  <figcaption>The map of an HKL region</figcaption>
+</figure>
 
 Adjust Map Shape.
 
-![Adjusting the map shape](img/hkl-map-shape.png)
+<figure markdown="span">
+  ![Adjusting the map shape](img/hkl-map-shape.png){ width="560" }
+  <figcaption>Adjusting the map shape</figcaption>
+</figure>
 
 Watch maps of multiple reflections simultaneously while moving through
 different scans.
 
-![Maps of multiple reflections](img/hkl-maps-multiple.png)
+<figure markdown="span">
+  ![Maps of multiple reflections](img/hkl-maps-multiple.png){ width="820" }
+  <figcaption>Maps of multiple reflections</figcaption>
+</figure>
 
 By locking scan number maps of the same reflection from different scans can
 be compared.
 
-![Comparing maps of the same reflection from different scans](img/hkl-maps-locked.png)
+<figure markdown="span">
+  ![Comparing maps of the same reflection from different scans](img/hkl-maps-locked.png){ width="820" }
+  <figcaption>Comparing maps of the same reflection from different scans</figcaption>
+</figure>
 
 As typically there are multiple elements of the table with the same crystal
 ID even within the same scan, average x,y position from all of the elements

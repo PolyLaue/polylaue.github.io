@@ -20,12 +20,17 @@ never writes into them.
 
 Open the navigator via **Projects → Navigator**.
 
-![The Projects menu](img/projects-menu.png)
+<figure markdown="span">
+  ![The Projects menu](img/projects-menu.png){ width="529" }
+  <figcaption>The Projects menu</figcaption>
+</figure>
 
-![The navigator at the projects level](img/navigator-projects.png)
+<figure markdown="span">
+  ![The navigator at the projects level](img/navigator-projects.png){ width="720" }
+  <figcaption>The navigator at the projects level</figcaption>
+</figure>
 
-Open the navigator via **Projects → Navigator**. The navigator shows one
-level of the hierarchy at a time:
+The navigator shows one level of the hierarchy at a time:
 
 - **Double-click** a project or section to descend into it (double-click
   a series to open it in the main window).
@@ -39,7 +44,10 @@ level of the hierarchy at a time:
 Click the add button at the root level of the navigator and fill in the
 fields:
 
-![The Project Editor](img/project-editor.png)
+<figure markdown="span">
+  ![The Project Editor](img/project-editor.png){ width="720" }
+  <figcaption>The Project Editor</figcaption>
+</figure>
 
 - **Name**: a unique name for the project.
 - **Description** (optional): free text for personal records.
@@ -88,7 +96,10 @@ in the **Geometry** field instead.
 If the PONI file cannot be parsed, a validation error is shown and
 nothing is written.
 
-![The Imported PONI Geometry dialog](img/poni-import.png)
+<figure markdown="span">
+  ![The Imported PONI Geometry dialog](img/poni-import.png){ width="653" }
+  <figcaption>The Imported PONI Geometry dialog</figcaption>
+</figure>
 
 ## Creating a section
 
@@ -97,9 +108,15 @@ after another.
 
 Inside a project, click the add button and fill in the fields:
 
-![The navigator inside a project](img/navigator-sections.png)
+<figure markdown="span">
+  ![The navigator inside a project](img/navigator-sections.png){ width="720" }
+  <figcaption>The navigator inside a project</figcaption>
+</figure>
 
-![The Section Editor](img/section-editor.png)
+<figure markdown="span">
+  ![The Section Editor](img/section-editor.png){ width="720" }
+  <figcaption>The Section Editor</figcaption>
+</figure>
 
 - **Name**: a unique name for the section.
 - **Description** (optional): free text for personal records.
@@ -115,7 +132,10 @@ directory, created automatically.
 
 Inside a section, click the add button and fill in the fields:
 
-![The Series Editor](img/series-editor.png)
+<figure markdown="span">
+  ![The Series Editor](img/series-editor.png){ width="820" }
+  <figcaption>The Series Editor</figcaption>
+</figure>
 
 - **Name**: a unique name for the series.
 - **Description** (optional): free text for personal records.
@@ -132,9 +152,15 @@ Inside a section, click the add button and fill in the fields:
 
 Double-click a series in the navigator to open it in the main window:
 
-![The navigator inside a section, listing its series](img/navigator-series.png)
+<figure markdown="span">
+  ![The navigator inside a section, listing its series](img/navigator-series.png){ width="720" }
+  <figcaption>The navigator inside a section, listing its series</figcaption>
+</figure>
 
-![Double-click a series to open it](img/navigator-open-series.png)
+<figure markdown="span">
+  ![Double-click a series to open it](img/navigator-open-series.png){ width="820" }
+  <figcaption>Double-click a series to open it</figcaption>
+</figure>
 
 ## Deleting entries
 
@@ -147,4 +173,7 @@ directory (the geometry file, predicted reflections, coordinate
 selections, maps, and the `Sections/` tree). The raw scan images do not
 live in the project directory, so they are never touched.
 
-![The delete confirmation for a project](img/delete-project.png)
+<figure markdown="span">
+  ![The delete confirmation for a project](img/delete-project.png){ width="524" }
+  <figcaption>The delete confirmation for a project</figcaption>
+</figure>

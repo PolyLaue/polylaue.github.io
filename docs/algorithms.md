@@ -45,7 +45,9 @@ unity vector is set parallel to its predicted reciprocal vector, while the
 predicted secondary reciprocal vector is constrained to lie in the plane of
 the observed primary and secondary unity vectors.
 
-![Figure 1](img/figure_1.png)
+<figure markdown="span" class=diagram>
+  ![Figure 1](img/figure_1.png){ width="820" }
+</figure>
 
 **Fig. 1.** Match between predicted reciprocal vectors, lying in the plane
 including the primary and secondary vectors, and observed unity vectors, as
@@ -136,7 +138,9 @@ If multigrain sample is shifting as a rigid body, angular shifts determined
 for one grain of sample can be applied to other grains of the same sample
 without the need to track other grains separately.
 
-![Figure 2](img/figure_2.png)
+<figure markdown="span" class=diagram>
+  ![Figure 2](img/figure_2.png){ width="663" }
+</figure>
 
 **Fig. 2.** Angular shifts, red arrows, of a hexagonal/trigonal lattice
 about c-axis by less than 30° (a) and by more than 30° (b). Incorrect
