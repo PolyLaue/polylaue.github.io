@@ -64,9 +64,9 @@ within the same scan is used to build an HKL-map for that scan.
 
 If the HKL cannot be found on a scan (the crystal is not tracked there,
 or the reflection is absent), the region keeps its last known position:
-its outline is hidden on the image and its cells turn red in the table,
-and the map is rebuilt as soon as a scan where the HKL exists is shown
-again.
+its outline is hidden on the image, its cells turn red in the table, and
+the map window shows "HKL not found on scan N" instead of a map. The map
+is rebuilt as soon as a scan where the HKL exists is shown again.
 
 ## Map windows
 
