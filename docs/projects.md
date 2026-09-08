@@ -39,9 +39,7 @@ level of the hierarchy at a time:
 Click the add button at the root level of the navigator and fill in the
 fields:
 
-!!! warning "FIXME: add screenshot"
-
-    The Project Editor dialog, filled in for a real project, with the Geometry field pointing at a `.poni` or `.npz` file (the draft's screenshot says "geosetup.npz must be created separately", which is no longer true).
+![The Project Editor](img/project-editor.png)
 
 - **Name**: a unique name for the project.
 - **Description** (optional): free text for personal records.
@@ -90,9 +88,7 @@ in the **Geometry** field instead.
 If the PONI file cannot be parsed, a validation error is shown and
 nothing is written.
 
-FIXME: add screenshot of the "Imported PONI Geometry" dialog after
-selecting a `.poni` file, showing the Detector Setup dropdown and the
-six parsed values (the Sep 3 email screenshot predates the dropdown).
+![The Imported PONI Geometry dialog](img/poni-import.png)
 
 ## Creating a section
 
