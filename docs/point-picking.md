@@ -33,3 +33,5 @@ points are always kept. Canceling the auto-picker restores the points
 exactly as they were before the run. The **Clear Points** button in the
 Find and Track/Refine interfaces removes all points, manual and
 auto-picked alike.
+
+![The Auto Pick Points dialog](img/auto-pick.png)

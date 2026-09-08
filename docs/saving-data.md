@@ -17,9 +17,15 @@ those run.
 
 ## ABC matrices
 
+This option is primarily intended to use ABC matrices for theoretical
+modelling, e.g. product or twin variants.
+
 The Burn Reflections dialog (**Overlays → Reflections → Burn**) can move
 a crystal's ABC matrix between the reflections file and the project
 directory:
+
+![The Orientation dropdown of the Burn Reflections dialog](img/burn-orientation.png)
+
 
 - **Write Orientation to Project Directory** saves the ABC matrix that
   the dialog is currently using to `abc_matrix.npy` (and an identical
@@ -48,16 +54,25 @@ the ABC matrix order. An applied angular shift is a pure rotation of
 those vectors, so the frame, ordering, and cell parameters are
 unchanged.
 
-FIXME: add screenshot — the Burn Reflections dialog with the
-Orientation dropdown open, showing "From HDF5 File" and "From Project
-Directory", and the two buttons below it.
+To import an ABC matrix from the project directory as a new crystal:
+Change ID to a new one, set orientation From Project Directory and check
+Activate Burn. A new entry will be made in HDF5 file using the current ABC
+matrix. The new orientation saved in HDF5 file will be fully equivalent to
+orientation determined with Indexing/Find in terms of further use of this
+orientation for refinement and tracking. This capability can be beneficial
+to move the same ABC matrix between different sections.
+
+![Burning from the project directory](img/burn-from-project-directory.png)
 
 ## Maps
 
-In a map window, **Save Map Data** saves the map currently displayed as
-a NumPy array to `map_data.npy` in the project directory. The array has
-one entry per scan position, in the same layout as the map. The file is
-overwritten on each save, so rename it if several maps are needed.
+In a map window (both region maps and HKL maps), **Save Map Data**
+saves the map currently displayed to `map_data.npy` in the project
+directory, as a 4D NumPy array: the first two axes are the scan
+position (row, column), the last two the pixels of the region. The data
+type follows the images (for example `uint16` for PerkinElmer images
+and `int32` for Pilatus CdTe images). The file is overwritten on each
+save, so rename it if several maps are needed.
 
 ## Picked points
 

@@ -1,13 +1,13 @@
 # Algorithms for Indexing and Tracking
 
-These functions are written in Python 3.11 [11]. Both indexing and tracking
+These functions are written in Python 3.11 [13]. Both indexing and tracking
 include checking a huge number of possible combinations between observed and
 predicted reciprocal vectors until the correct combination is found. In the
 software used previously, these procedures were implemented by iterating with
 Python loops, which made processing the data from multigrain samples quite
 time consuming [1-9]. In PolyLaue, broadcasting of arrays in NumPy 1.26 is
 used instead of Python loops, which makes these routines multiple orders of
-magnitude faster [10,12].
+magnitude faster [10,14].
 
 The first steps, common to both the indexing and tracking routines, are:
 
@@ -26,7 +26,7 @@ The first steps, common to both the indexing and tracking routines, are:
 
 This routine is used to index Laue reflections produced by the same
 crystalline grain within a multigrain sample, based on two observed Laue
-spots, called primary and secondary [13]. The primary reflection is selected
+spots, called primary and secondary [15]. The primary reflection is selected
 by the user. The set of secondary reflections can be either specified by the
 user or found automatically with the PolyLaue peak search function. The
 indexation routine tests secondary spots, one after another, in order to find
@@ -90,3 +90,65 @@ problem. Otherwise, the option Conserve Memory can be used in order to check
 all possible combinations of primary and secondary vectors by running two
 loops instead of generating `ndarray` objects. Using this option saves memory
 but makes the indexation routine more time consuming.
+
+## Tracking of Crystals
+
+This routine (function track() in the Python script) is used to track
+angular shifts of crystalline grains within a multigrain sample caused by
+shrink of gasket material across compression in diamond anvil cells.
+Increase of pressure typically causes movement of sample in particular when
+sample is on contact with gasket material either directly or via Ruby balls,
+pieces of standard materials used to measure pressure, other samples.
+
+Apart from indexing routine, which does not require any preliminary
+knowledge of crystal orientation, tracking routine is based on crystal
+orientation found at different pressure, either at higher or lower one.
+Therefore, tracking algorithm has the following differences from indexing.
+
+- Listing of predicted reciprocal vectors is generated based on predefined
+  orientation matrix obtained at different pressure. Only vectors deviating
+  from observed unity vectors within Angular Limit are included in the list.
+- Instead of using only one primary reflection all possible combinations of
+  observed primary and secondary reflections are included into the routine
+  [15]. Combination which yields the best match between predicted reciprocal
+  and observed unity vectors is used to calculate crystal orientation.
+  Therefore, this routine is also used to refine orientation of a crystal at
+  the same pressure if pair of primary and secondary reflections used during
+  indexing does not provide enough precision.
+
+If Angular Limit is more than 30°, incorrect shift may be determined due to
+symmetry of translation lattice (Fig. 2). If a hexagonal or trigonal crystal
+may be rotated about c-axis by angle of more than 30° and, as tracking is
+based only on translation lattice without use of space group, two angular
+shifts can be detected by tracking routine within the Angular Limit, but
+only one of them will be correct. Translation lattices of other symmetries
+have larger angular thresholds for such uncertainties.
+
+Even if total rotation during compression is larger than 30˚, in general,
+this issue still can be avoided, even for hexagonal/trigonal lattices, if
+angular shift with respect to crystal orientation obtained at pressure right
+below or above the current one is smaller than 30˚. In this case, if option
+‘Use nearest tracked scan for reference ABC matrix’ is active, crystal
+orientation obtained at closest pressure to the current one will be used for
+tracking.
+
+If multigrain sample is shifting as a rigid body, angular shifts determined
+for one grain of sample can be applied to other grains of the same sample
+without the need to track other grains separately.
+
+![Figure 2](img/figure_2.png)
+
+**Fig. 2.** Angular shifts, red arrows, of a hexagonal/trigonal lattice
+about c-axis by less than 30° (a) and by more than 30° (b). Incorrect
+angular shift may be found: dotted red arrow.
+
+When this routine is running, all possible combinations of primary and
+secondary vectors are stored in memory as two NumPy arrays, ndarray objects.
+Therefore, if these arrays are too large, the indexation routine may fail
+due to the lack of memory. Repeating this routine with somewhat larger value
+of Resolution Limit (dmin) may solve the problem. Otherwise, option Conserve
+Memory can be used (function track_py() in the Python script) in order to
+check all possible combinations of primary and secondary vectors by running
+of two included cycle loops instead of generating ndarray objects. Using
+this option saves memory but makes the indexation routine more time
+consuming.

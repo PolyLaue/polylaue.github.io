@@ -43,3 +43,8 @@ as NumPy arrays, and, therefore, they can be used by other programs [10].
 
 See the [References](references.md) page for the numbered citations used
 throughout this documentation.
+
+!!! note
+
+    At the 16BMD beamline of HPCAT, high pressure Laue data can also be
+    analyzed with the LaueGo software, in parallel with PolyLaue [11,12].

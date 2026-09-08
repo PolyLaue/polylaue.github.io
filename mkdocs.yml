@@ -13,8 +13,12 @@ nav:
   - getting-started.md
   - projects.md
   - viewing.md
+  - identification.md
   - point-picking.md
+  - reflections.md
   - mapping.md
   - saving-data.md
   - algorithms.md
+  - calibration.md
+  - structure-types.md
   - references.md

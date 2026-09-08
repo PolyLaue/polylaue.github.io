@@ -9,34 +9,71 @@ region of interest) evolves across a scan.
 Open **Mapping → Regions** to manage plain rectangular regions. Click
 **Start Interactive Add** and draw regions directly on the image, then
 click **Stop Interactive Add** when finished. Select a region and click
-**Display Region** to open a map of that region across the scan.
+**Display Region** to open a map of that region across the scan. See
+[Identifying and Tracking Crystals](identification.md#mapping-of-laue-reflections)
+for a walkthrough.
 
 ## HKL region maps
 
 Open **Mapping → HKL Regions** to manage regions that are tied to a
 specific reflection: each entry has a crystal ID and an HKL, and the
 region automatically re-centers itself on that reflection's predicted
-position whenever the scan number changes.
+position whenever the scan number changes. Predicted reflections must be
+loaded (see [Predicted Reflections](reflections.md)) for HKL regions to
+resolve their positions.
+
+![HKL Regions in the Mapping menu](img/hkl-regions-menu.png)
 
 There are two ways to add an entry:
 
-- Click **Add Region** in the dialog, then edit the crystal ID and the
-  H, K, L values in the table. The region appears on the image as soon
-  as the HKL can be resolved for the current scan.
+- Click **Add Region**, then input the HKL indices and adjust the box
+  size in the table. The region appears on the image as soon as the HKL
+  can be resolved for the current scan.
 - **Right-click a predicted reflection** on the image and choose
   *Create HKL map for (h k l)*. This opens the HKL Regions dialog and
   adds an entry for that reflection's crystal ID and HKL, centered on
   the reflection.
 
-Predicted reflections must be loaded (see the Overlays menu) for HKL
-regions to resolve their positions.
+![An HKL region in the table](img/hkl-regions-table.png)
+
+![Right-clicking a predicted reflection](img/hkl-map-right-click.png)
+
+![The entry added by the right-click menu](img/hkl-regions-auto-added.png)
+
+Click Display Region.
+
+![The map of an HKL region](img/hkl-map.png)
+
+Adjust Map Shape.
+
+![Adjusting the map shape](img/hkl-map-shape.png)
+
+Watch maps of multiple reflections simultaneously while moving through
+different scans.
+
+![Maps of multiple reflections](img/hkl-maps-multiple.png)
+
+By locking scan number maps of the same reflection from different scans can
+be compared.
+
+![Comparing maps of the same reflection from different scans](img/hkl-maps-locked.png)
+
+As typically there are multiple elements of the table with the same crystal
+ID even within the same scan, average x,y position from all of the elements
+within the same scan is used to build an HKL-map for that scan.
+
+If the HKL cannot be found on a scan (the crystal is not tracked there,
+or the reflection is absent), the region keeps its last known position:
+its outline is hidden on the image and its cells turn red in the table,
+and the map is rebuilt as soon as a scan where the HKL exists is shown
+again.
 
 ## Map windows
 
 Clicking **Display Region** opens a map window for the selected region.
 **Show Map Shape** displays the mapped area on the image so it can be
 adjusted, and **Save Map Data** saves the current map as a NumPy array
-(`map_data.npy` in the project directory).
+(see [Saving and Loading Data](saving-data.md#maps)).
 
 A map window can be locked to its current scan number with the **Lock
 Scan Number** checkbox, so that maps of the same region at different

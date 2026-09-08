@@ -18,6 +18,12 @@ never writes into them.
 
 ## The navigator
 
+Open the navigator via **Projects → Navigator**.
+
+![The Projects menu](img/projects-menu.png)
+
+![The navigator at the projects level](img/navigator-projects.png)
+
 Open the navigator via **Projects → Navigator**. The navigator shows one
 level of the hierarchy at a time:
 
@@ -32,6 +38,10 @@ level of the hierarchy at a time:
 
 Click the add button at the root level of the navigator and fill in the
 fields:
+
+!!! warning "FIXME: add screenshot"
+
+    The Project Editor dialog, filled in for a real project, with the Geometry field pointing at a `.poni` or `.npz` file (the draft's screenshot says "geosetup.npz must be created separately", which is no longer true).
 
 - **Name**: a unique name for the project.
 - **Description** (optional): free text for personal records.
@@ -86,7 +96,14 @@ six parsed values (the Sep 3 email screenshot predates the dropdown).
 
 ## Creating a section
 
+Section includes multiple series of two-dimension (2D) scans collected one
+after another.
+
 Inside a project, click the add button and fill in the fields:
+
+![The navigator inside a project](img/navigator-sections.png)
+
+![The Section Editor](img/section-editor.png)
 
 - **Name**: a unique name for the section.
 - **Description** (optional): free text for personal records.
@@ -102,6 +119,8 @@ directory, created automatically.
 
 Inside a section, click the add button and fill in the fields:
 
+![The Series Editor](img/series-editor.png)
+
 - **Name**: a unique name for the series.
 - **Description** (optional): free text for personal records.
 - **Directory**: the directory containing the scan images of this
@@ -115,6 +134,12 @@ Inside a section, click the add button and fill in the fields:
   subtraction. This may also be selected later by right-clicking an
   image in the main window and choosing *set as background*.
 
+Double-click a series in the navigator to open it in the main window:
+
+![The navigator inside a section, listing its series](img/navigator-series.png)
+
+![Double-click a series to open it](img/navigator-open-series.png)
+
 ## Deleting entries
 
 Deleting an entry in the navigator asks for confirmation first — the
@@ -125,3 +150,5 @@ a checkbox to also delete the auto-generated files in the project
 directory (the geometry file, predicted reflections, coordinate
 selections, maps, and the `Sections/` tree). The raw scan images do not
 live in the project directory, so they are never touched.
+
+![The delete confirmation for a project](img/delete-project.png)
