@@ -34,7 +34,13 @@ directory:
   sections, or loaded from an external program.
 - **Overwrite Crystal in Reflections File** stores the matrix the dialog
   is currently using into the reflections file for the selected crystal
-  ID, together with the current scan number.
+  ID, together with the current scan number. Burning with a crystal ID
+  that does not exist yet adds the crystal to the reflections file
+  automatically, so this button is only needed to replace an *existing*
+  crystal's matrix: for example, to update it with an orientation read
+  from the project directory, or to store it with the current scan's
+  angular shift applied (equivalent to *Replace ABC Matrix* in
+  Track/Refine, but using the saved shift instead of tracking again).
 
 The saved matrix is exactly what Find produces: the three basis vectors
 of the direct lattice in the detector frame, as 9 values (a, b, c) in
