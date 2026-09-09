@@ -17,8 +17,8 @@ those run.
 
 ## ABC matrices
 
-This option is primarily intended to use ABC matrices for theoretical
-modelling, e.g. product or twin variants.
+Saving ABC matrices is primarily intended for theoretical modelling, e.g.
+of product or twin variants.
 
 The Burn Reflections dialog (**Overlays → Reflections → Burn**) can move
 a crystal's ABC matrix between the reflections file and the project
