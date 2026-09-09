@@ -74,8 +74,9 @@ Advanced Photon Source of Argonne National Laboratory.
   deformation, phase transitions, melting, and crystallization
 
 PolyLaue was developed to replace software that was used previously [1-9].
-Results are saved in HDF5 format, as ASCII files, and as NumPy arrays, so they
-can be used by other programs [10]. See the [References](references.md) page
+For summaries of Laue fundamentals, see [10,11]. Results are saved in HDF5
+format, as ASCII files, and as NumPy arrays, so they can be used by other
+programs [12]. See the [References](references.md) page
 for the numbered citations used throughout this documentation.
 
 ## System Requirements
@@ -102,4 +103,4 @@ All other dependencies are installed automatically. See
 !!! note
 
     At the 16BMD beamline of HPCAT, high pressure Laue data can also be
-    analyzed with the LaueGo software, in parallel with PolyLaue [11,12].
+    analyzed with the LaueGo software, in parallel with PolyLaue [13,14].

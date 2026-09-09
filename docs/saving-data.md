@@ -41,15 +41,16 @@ directory:
   `abc_matrix.npy` from the project directory instead of the
   reflections file. This is how an orientation is transferred between
   sections, or loaded from an external program.
-- **Overwrite Crystal in Reflections File** stores the matrix the dialog
-  is currently using into the reflections file for the selected crystal
-  ID, together with the current scan number. Burning with a crystal ID
-  that does not exist yet adds the crystal to the reflections file
-  automatically, so this button is only needed to replace an *existing*
-  crystal's matrix: for example, to update it with an orientation read
-  from the project directory, or to store it with the current scan's
-  angular shift applied (equivalent to *Replace ABC Matrix* in
-  Track/Refine, but using the saved shift instead of tracking again).
+- **Overwrite Crystal in Reflections File** replaces the ABC matrix of
+  an *existing* crystal ID with the matrix the dialog is currently using
+  (read from the project directory, or the stored matrix with the
+  current scan's angular shift applied) and records the current scan
+  number for it. The crystal's tracked angular shifts are recalculated
+  with respect to the new matrix, so its orientation on every tracked
+  scan is unchanged: the same as *Replace ABC Matrix* in Track/Refine,
+  but without tracking again. Burning with a crystal ID that does not
+  exist yet adds the crystal automatically, so the button is not needed
+  for importing a new crystal.
 
 The saved matrix is exactly what Find produces: the three basis vectors
 of the direct lattice in the detector frame, as 9 values (a, b, c) in

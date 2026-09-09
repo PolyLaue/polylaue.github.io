@@ -1,13 +1,13 @@
 # Algorithms for Indexing and Tracking
 
-These functions are written in Python 3.11 [13]. Both indexing and tracking
+These functions are written in Python 3.11 [15]. Both indexing and tracking
 include checking a huge number of possible combinations between observed and
 predicted reciprocal vectors until the correct combination is found. In the
 software used previously, these procedures were implemented by iterating with
 Python loops, which made processing the data from multigrain samples quite
 time consuming [1-9]. In PolyLaue, broadcasting of arrays in NumPy 1.26 is
 used instead of Python loops, which makes these routines multiple orders of
-magnitude faster [10,14].
+magnitude faster [12,16].
 
 The first steps, common to both the indexing and tracking routines, are:
 
@@ -26,7 +26,7 @@ The first steps, common to both the indexing and tracking routines, are:
 
 This routine is used to index Laue reflections produced by the same
 crystalline grain within a multigrain sample, based on two observed Laue
-spots, called primary and secondary [15]. The primary reflection is selected
+spots, called primary and secondary [17]. The primary reflection is selected
 by the user. The set of secondary reflections can be either specified by the
 user or found automatically with the PolyLaue peak search function. The
 indexation routine tests secondary spots, one after another, in order to find
@@ -112,7 +112,7 @@ Therefore, tracking algorithm has the following differences from indexing.
   from observed unity vectors within Angular Limit are included in the list.
 - Instead of using only one primary reflection all possible combinations of
   observed primary and secondary reflections are included into the routine
-  [15]. Combination which yields the best match between predicted reciprocal
+  [17]. Combination which yields the best match between predicted reciprocal
   and observed unity vectors is used to calculate crystal orientation.
   Therefore, this routine is also used to refine orientation of a crystal at
   the same pressure if pair of primary and secondary reflections used during

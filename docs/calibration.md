@@ -3,7 +3,7 @@
 In HPCAT detector geometry is calibrated using X-ray monochromatic beam
 exchangeable with the white beam. Program Dioptas is used to get detector
 tilt, sample to detector distance and point of normal incidence (PONI)
-[16,17]. Calculations in PolyLaue are conducted with respect to coordinate
+[18,19]. Calculations in PolyLaue are conducted with respect to coordinate
 frame attached to the area detector (Fig. 3). Relations between parameters
 saved in poni-files by Dioptas and orientation of incident beam, PONI and
 sample to detector distance in the notation of PolyLaue, saved in the
@@ -29,7 +29,7 @@ the PolyLaue coordinate system at 16BMD.
 </figure>
 
 **Fig. 5.** Transferring of detector geometry from PolyLaue to LaueGo at
-16BMD [11,12].
+16BMD [13,14].
 
 ## Importing the geometry into PolyLaue
 
