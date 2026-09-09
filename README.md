@@ -8,8 +8,8 @@ Building Locally
 
 First clone the repository, and then get your environment set up.
 
-    git clone git://github.com/polylaue/polylaue-docs
-    cd polylaue-docs
+    git clone https://github.com/polylaue/polylaue.github.io
+    cd polylaue.github.io
 
 Using Python 3, run the following commands to install the documentation
 requirements and start the server:
@@ -23,9 +23,9 @@ preferred browser at: http://localhost:8090/.
 Alternatively, you may run the `serve.sh` script, which does essentially
 the same thing.
 
-![Kitware, Inc.][KitwareLogo]
+Developed by [Kitware, Inc.][kitware]
 
   [polylaue]: https://github.com/polylaue/polylaue/ "The PolyLaue project"
-  [KitwareLogo]: http://www.kitware.com/img/small_logo_over.png "Kitware"
+  [kitware]: https://www.kitware.com/ "Kitware, Inc."
   [mkdocs]: https://www.mkdocs.org/
   [site]: https://polylaue.github.io/
