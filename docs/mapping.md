@@ -95,8 +95,8 @@ is rebuilt as soon as a scan where the HKL exists is shown again.
 ## Map windows
 
 Clicking **Display Region** opens a map window for the selected region.
-**Show Map Shape** displays the mapped area on the image so it can be
-adjusted, and **Save Map Data** saves the current map as a NumPy array
+**Show Map Shape** draws a rectangle in the map window marking the scan
+positions being mapped, which can be adjusted, and **Save Map Data** saves the current map as a NumPy array
 (see [Saving and Loading Data](saving-data.md#maps)).
 
 A map window can be locked to its current scan number with the **Lock

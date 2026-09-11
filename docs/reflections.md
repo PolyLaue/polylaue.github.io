@@ -70,6 +70,10 @@ Open **Overlays → Reflections**:
 Click Burn. Set Structure Type, d-limit, check Apply Angular Shift if
 needed, check Activate Burn.
 
+Burning, like Find and Track/Refine, requires
+the project's **Geometry** file to be set (see
+[Projects, Sections, and Series](projects.md#creating-a-project)).
+
 <figure markdown="span">
   ![Burned reflections on the image](img/burn.png){ width="820" }
   <figcaption>Burned reflections on the image</figcaption>

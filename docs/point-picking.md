@@ -11,6 +11,10 @@ While the interface is active, **left-click** on the image adds a point
 and **right-click** removes the nearest point. The dialog shows the
 current number of points.
 
+The **first** point picked is used as the primary reflection by Find, so
+pick the Laue spot of the crystal of interest first. The remaining points
+must not all lie on one zone line with it.
+
 When picking points on their own via **Select Points**, the selection
 can be saved as **Indexing** (`indexing.xy` at the root of the project
 directory), **Refinement** (`refinement.xy`), or to an arbitrary file.

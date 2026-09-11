@@ -35,7 +35,7 @@ The navigator shows one level of the hierarchy at a time:
 - **Double-click** a project or section to descend into it (double-click
   a series to open it in the main window).
 - Use the navigation bar at the top to move back up.
-- Use the **+** (add), pencil (edit), and **-** (remove) buttons, or
+- Use the **Add**, **Edit**, and **Remove** buttons, or
   right-click an entry, to create, edit, or delete entries at the
   current level.
 
@@ -141,8 +141,14 @@ Inside a section, click the add button and fill in the fields:
 - **Description** (optional): free text for personal records.
 - **Directory**: the directory containing the scan images of this
   series. The contents are validated against the settings below,
-  including the expected number of images.
-- **Scan shape**: the shape of the scans within this series.
+  including the expected number of images. The images must be named
+  `<prefix>_<number>.tif` (or `.tiff`, `.cbf`) with consecutive numbers;
+  PolyLaue uses the prefix shared by the most files in the directory and
+  expects one image per frame, in order, after the skipped frames.
+- **Scan shape**: the shape of the scans within this series, entered as
+  the number of scan positions along Y and along Z, in that order. Each
+  scan then contains one frame per position, so the product of the two
+  is the number of frames per scan.
 - **Scan range**: the range of scan numbers in this series (inclusive).
 - **Skip frames**: how many frames to skip from the beginning of the
   series (usually invalid or background frames).

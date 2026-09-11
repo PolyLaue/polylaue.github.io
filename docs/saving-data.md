@@ -49,8 +49,9 @@ directory:
   with respect to the new matrix, so its orientation on every tracked
   scan is unchanged: the same as *Replace ABC Matrix* in Track/Refine,
   but without tracking again. Burning with a crystal ID that does not
-  exist yet adds the crystal automatically, so the button is not needed
-  for importing a new crystal.
+  exist yet, with **Orientation** set to *From Project Directory*, adds
+  the crystal automatically, so the button is not needed for importing a
+  new crystal.
 
 The saved matrix is exactly what Find produces: the three basis vectors
 of the direct lattice in the detector frame, as 9 values (a, b, c) in

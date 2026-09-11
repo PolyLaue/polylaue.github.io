@@ -11,8 +11,8 @@ while navigating through a series.
   <figcaption>The main window with the scan number spinbox</figcaption>
 </figure>
 
-The label above the image shows the current series, scan number, and
-scan position, and the status bar shows the pixel position and intensity
+The bar above the image shows the scan number and the current scan
+position, the window title shows the current file name, and the status bar shows the pixel position and intensity
 under the mouse (plus details of any predicted reflection being
 hovered).
 
@@ -81,7 +81,8 @@ top-right corner. The time comes from one of two sources:
   of the section. A file is considered "modified" when it was written;
   copying the file does not change its mtime, so it still points to the
   original time when the file was written. The only thing that changes
-  the mtime is modifying the contents of the file.
+  the mtime is modifying the contents of the file. On macOS and Linux,
+  the file creation time is used instead of the mtime.
 
 ### Acquisition times
 

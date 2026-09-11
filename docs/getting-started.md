@@ -53,6 +53,10 @@ After starting PolyLaue, the typical workflow is:
    [Algorithms](algorithms.md).
 4. Create region maps and HKL region maps: see [Mapping](mapping.md).
 
+This documentation can be opened from within PolyLaue via **Help →
+Documentation**, and the **Help** button on each dialog opens the page
+that describes it.
+
 !!! note
 
     Very detailed tooltips are available if you hover the mouse over an
